@@ -9,6 +9,7 @@ function ulToOl(){
 			console.log('tag[' + i + ']: ' + tags[i]);
 			console.log('tag[' + i + '].innerHTML: ' + tags[i].innerHTML);
 			content = tags[i].innerHTML.replace(/<ul>/, '<ol>');
+			content = tags[i].innerHTML.replace(/<\/ul>/, '<\/ol>');
 			console.log('content: ' + content);
 		}
 	}

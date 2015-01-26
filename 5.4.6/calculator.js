@@ -21,3 +21,15 @@ function replaceIdElem(id, newValue){
 	console.log(element.innerHTML);
 	element.innerHTML = newValue;
 }
+
+function randomAdd(){
+	firstNum = randomInt();
+	secNum = randomInt();
+	replaceIdElem('op', firstNum + " + " + secNum + " ");
+	calculator();
+}
+
+function randomInt(){
+	var num = Math.floor(Math.random()*100);
+	return num;
+}

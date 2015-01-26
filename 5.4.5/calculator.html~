@@ -5,7 +5,7 @@
 	</head>
 
 	<body>
-		<p>Adder...<span id='op'>5+3+9</span>
+		<p>Adder...<span id='op'>5+3</span>
 		<span id="res"></span> <a href="javascript:calculator()">Add!</a></p>
 	</body>
 </html>
