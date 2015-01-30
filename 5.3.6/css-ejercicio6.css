@@ -49,13 +49,16 @@ img { border: none; }
    ================================================================== */
 
 body{
-	font: 0.9em/1.4 Arial;
+	font-size: 0.9em;
+	line-height: 1.4;
+	font-family: arial;
 	color: black;
 }
 
-h2.articulo{
+.articulo h2{
 	color: #CC6600;
-	font-size: 1.6em/1.2;
+	font-size: 1.6em
+	font-height: 1.2;
 	margin-bottom: 0.3em;
 }
 
@@ -77,8 +80,29 @@ h2.articulo{
 }
 
 #noticias h3{
-	color: #003366;
+	color: #FFFFFF;
 }
+
+/*#publicidad{
+	color: #555;
+}
+
+#publicidad :link{
+	color: #CC6600;
+}
+
+.articulo{
+	color: #CC6600;
+}
+
+p.articulo{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+#secundario h2{
+	color: white; 
+}*/
 
 #cabecera,
 #menu,
