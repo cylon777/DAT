@@ -1,0 +1,10 @@
+<html>
+	<head>
+		<script type="text/javascript" src="app_random_img.js"></script>
+	</head>
+	<body>
+		<a href="javascript:randomImg()">Another image!</a></p>
+		<div id="img">
+		</div>
+	</body>
+</html>
