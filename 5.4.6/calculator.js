@@ -26,7 +26,7 @@ function randomAdd(){
 	firstNum = randomInt();
 	secNum = randomInt();
 	replaceIdElem('op', firstNum + " + " + secNum + " ");
-	calculator();
+	replaceIdElem('res', "");
 }
 
 function randomInt(){

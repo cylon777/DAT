@@ -1,0 +1,5 @@
+Crea una página web con un elemento div con identificador ''sandbox'', que contenga una cabecera con el texto ''Prueba CSS3'' 
+(siendo CSS3 una abreviatura) y un párrafo con el texto ''Los cambios se realizan sobre este elemento.'' Indica que se usará 
+una hoja de estilo externa y guarda la página.
+
+Visualmente, el resultado ha de ser similar al del fichero css3_1.png, tal y como podéis ver en Moodle.
