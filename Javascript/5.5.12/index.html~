@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="event.js"></script>
+		<link rel="stylesheet" type="text/css" href="event.css" title="style" />
+	</head>
+	<body>
+		
+	<input type="text" id="input" value=""></input>
+	<br></br>
+	<div class="circle"></div>
+	</body>
+</html>
