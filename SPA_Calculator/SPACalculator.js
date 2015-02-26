@@ -17,7 +17,8 @@ $(document).ready(function() {
 				displayContent = "";
 				$("input").val(displayContent);
 			}else if(elemContent=="="){
-				if(checkNum(elemContent)==null)
+				console.log("displayContent: '" + displayContent + "'");
+				if(checkNum(displayContent)==null)
 					$("input").val("OK");
 				else
 					$("input").val(checkNum(elemContent));
@@ -30,7 +31,7 @@ $(document).ready(function() {
 			var ch = str.substring(i, i+1);
 			if (ch < "0" || ch > "9") {
 				console.log("IS NOT A NUMBER");
-				if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "(" && ch!= ")") {
+				if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "(" && ch!= ")" && ch!= "&divide;") {
 					console.log("IS NOT A VALID CHARACTER");
 					return("invalid entry: '" + ch + "'");
 				}
