@@ -1,0 +1,1 @@
+Escribe una funcion JavaScript que acepte dos argumentos: un identificador de elemento HTML, y una cadena de texto HTML. La funcion, cuando sea ejecutada, buscara ese elemento en la pagina HTML que esta cargada en el navegador, y cambiara su contenido HTML por el que indique el segundo argumento.

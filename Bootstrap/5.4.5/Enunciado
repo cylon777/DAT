@@ -1,0 +1,17 @@
+Utilizando la funci ́on creada en el ejercicio “Funci ́on que cambia un elemento
+HTML” (ejercicio 5.4.4), escribir una funci ́on que realice una suma. Para ello,
+partimos de una p ́agina HTML que tenga el siguiente c ́odigo:
+<p>Adder...<span id=’op’>5+3</span>
+<span id="res"></span> <a href="">Add!</a></p>
+El objetivo es que cuando se pulse sobre “Add!” aparezca a continuaci ́on de
+“5+3” la cadena “=8” (siendo 8 la suma de los dos operandos). Para ello la funci ́on
+a escribir aceptar ́a como par ́ametros dos cadena de texto, que ser ́an el identificador
+del elemento HTML donde est ́a la operaci ́on, y el del elemento donde se escribir ́a
+el resultado.
+Se considera que la operaci ́on estar ́a siempre en formato “primer n ́
+umero, +,
+segundo n ́
+umero”. La funci ́on tendr ́a que buscar la operaci ́on, identificar los ope-
+randos en ella (por ejemplo, usando “split”), realizar la suma y, utilizando la
+funci ́on de cambio de un elemento HTML, escribir el contenido en el elemento
+HTML del resultado.
