@@ -2,16 +2,15 @@
 // ...and fade it back when clicking over some other.
 //
 jQuery(document).ready(function() {
-    $("#faq dt").click(function() {
-		$(this).fadeOut("slow");
-    });
-    $("h3").click(function() {
-		$("dt").fadeIn("slow");
-    });
-	$("#changeColor").keyup(function() {
-		var color = '"' + $(this).val() + '"';
-		console.log(color);
-		$('#orderedlist').addClass(color.toString());
+	$("#btn1").click(function() {
+		$('#orderedlist').addClass("red");
 	});
-	
+	$("#btn2").click(function() {
+		$('#orderedlist').addClass("blue");
+	});
+	$( "* li:last-child" ).hover(function() {
+		$( this ).addClass("green");
+	}, function() {
+		$( this ).removeClass("green");
+	});
 });
