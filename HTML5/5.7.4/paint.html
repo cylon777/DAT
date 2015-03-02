@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+  Based on HTML5 for Publishers (O'Reilly book)
+  http://examples.oreilly.com/0636920022473/
+-->
+<html>
+  <head>
+    <title>Un sencillo Paint con HTML5</title>
+    <link rel="stylesheet" href="paint.css"/>
+    <script src="paint.js"></script>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <div>
+      <h1>Un Paint algo mas complicado</h1>
+      <canvas id="canvas" width="500" height="500">
+        Tu navegador no soporta canvas de HTML 5. 
+      </canvas>
+    </div>
+    <div>
+      <p>Pulsa para seleccionar un color abajo y luego desplaza el puntero con el botón del ratón apretado sobre el canvas para dibujar.</p>
+      <p>Color elegido: <span id="color_chosen">Black</span></p>
+      <p>
+        <input class="button" type="button" id="Red"/>
+        <input class="button" type="button" id="Green"/>
+        <input class="button" type="button" id="Blue"/>
+        <input class="button" type="button" id="Black"/>
+        <input class="button" type="button" id="White"/>
+      </p>  
+      <p>
+        <input type="button" id="reset_image" value="Borrar"/>
+      </p>
+		<p>
+			Choose Pointer Size:
+			<input id="size" type="text" value=""></input>
+		</p>
+    </div>
+  </body>
+</html>
