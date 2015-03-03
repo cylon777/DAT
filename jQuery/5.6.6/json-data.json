@@ -1,4 +1,4 @@
 {
-"title": "This is just a title",
-"entries": ["This is the first one", "This is the second one"]
+	"hi": "Hi world!",
+	"entries": ["This is the first one", "This is the second one"]
 }
