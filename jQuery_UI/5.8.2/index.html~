@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery UI Example Page</title>
+		<link href="/home/al-10-11/islimane/jQueryUI/jquery-ui-1.11.3/jquery-ui.css" rel="stylesheet">
+		<script src="/home/al-10-11/islimane/jQueryUI/jquery-ui-1.11.3/external/jquery/jquery.js"></script>
+		<script src="/home/al-10-11/islimane/jQueryUI/jquery-ui-1.11.3/jquery-ui.min.js"></script>
+		<script src="widgets.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" title="style"/>
+	</head>
+	<body>
+		<input type="text" name="date" id="date">
+		<ul id="menu">
+			<li class="ui-state-disabled">Aberdeen</li>
+			<li>Ada</li>
+			<li>Adamsville</li>
+			<li>Addyston</li>
+			<li>Delphi
+				<ul>
+					<li class="ui-state-disabled">Ada</li>
+					<li>Saarland</li>
+					<li>Salzburg an der schönen Donau</li>
+				</ul>
+			</li>
+			<li>Saarland</li>
+			<li>Salzburg
+				<ul>
+					<li>Delphi
+						<ul>
+							<li>Ada</li>
+							<li>Saarland</li>
+							<li>Salzburg</li>
+						</ul>
+					</li>
+					<li>Delphi
+						<ul>
+							<li>Ada</li>
+							<li>Saarland</li>
+							<li>Salzburg</li>
+						</ul>
+					</li>
+					<li>Perch</li>
+				</ul>
+			</li>
+			<li class="ui-state-disabled">Amesville</li>
+		</ul>
+		<br>
+		<div id="draggable" class="ui-widget-content">
+			<p>Drag me around</p>
+		</div>
+		<img id="droppable" class="ui-widget-header">
+			<p>Drop here</p>
+		</img>
+	</body>
+</html>
