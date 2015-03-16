@@ -1,17 +1,4 @@
 $(document).ready(function() {
-	/*$("#btn").click(function(){
-		$.getJSON("json-data.json", function(data) {
-			var words = [data.first, data.second, data.third];
-			var sentence = document.getElementById("sentence");
-			var newwords = [];
-			for(var i=0;i<words.length;i+=1){
-				newwords.push(words[i][Math.floor(Math.random() * words[i].length)]);
-			}
-			console.log("newwords:" + newwords);
-			$('#sentence').html(newwords[0] + " " + newwords[1] + " " + newwords[2]);
-		});
-	});*/
-
 	$.getJSON("timeline.json", function(data) {
 		for(var i=0;i<data.length;i+=1){
 			msg = '<div class="msg">';
@@ -19,6 +6,27 @@ $(document).ready(function() {
 			msg += '<p>' + data[i].Contenido + '<p>'
 			msg += '</div>'
 			$("#log").append(msg);
+		}
+	});
+
+	var updateData;
+
+	$.getJSON("update.json", function(data) {
+		updateData = data;
+		if(updateData.length>0){
+			$('#btn').html('<button id="showMsgs">' + updateData.length + ' New Messages</button>');
+		}
+	});
+
+
+	$("#btn").on('click', function(){
+		console.log("CLICK");
+		for(var i=0;i<updateData.length;i+=1){
+			msg = '<div class="msg">';
+			msg += '<p>@' + updateData[i].Autor + ': ' + updateData[i].Titulo + '<p>'
+			msg += '<p>' + updateData[i].Contenido + '<p>'
+			msg += '</div>'
+			$("#newMsgs").append(msg);
 		}
 	});
 });
