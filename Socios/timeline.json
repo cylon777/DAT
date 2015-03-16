@@ -1,0 +1,25 @@
+[
+	{"Autor" : "subject1",
+	"Avatar": "",
+	"Titulo": "First message",
+	"Contenido": "Text 1",
+	"Fecha": "16/03/2015"},
+
+	{"Autor" : "subject2",
+	"Avatar": "",
+	"Titulo": "Second message",
+	"Contenido": "Text 2",
+	"Fecha": "16/03/2015"},
+
+	{"Autor" : "subject3",
+	"Avatar": "",
+	"Titulo": "Third message",
+	"Contenido": "Text 3",
+	"Fecha": "16/03/2015"},
+
+	{"Autor" : "subject4",
+	"Avatar": "",
+	"Titulo": "Fourth message",
+	"Contenido": "Text 4",
+	"Fecha": "16/03/2015"}
+]
