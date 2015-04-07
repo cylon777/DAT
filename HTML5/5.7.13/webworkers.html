@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio con WebWorkers</title>
+		<script type="text/javascript" src="app.js"></script>
+		<script>
+			function buscarPrimos() {
+				var worker = new Worker('app.js');
+				var value = parseInt(document.getElementById("formulario").input.value);
+				worker.postMessage(value);
+				worker.addEventListener('message', function(e) {
+					document.getElementById('result').innerHTML = e.data;
+				}, false);
+			}
+		</script>
+
+
+	</head>
+	<body>
+		<form id="formulario" action="" method="POST">
+			Numero: <input type="text" name="input">
+		</form>
+		<button onclick="buscarPrimos()">Buscar primos</button>
+		<p>Los numeros primos hasta el numero dado son: <span id="result"></span></p>
+	</body>
+</html>
